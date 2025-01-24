@@ -90,7 +90,7 @@ public class admin_menu1 extends AppCompatActivity {
                 editor.putString("usertype","");
                 editor.commit();
             }
-        });*/
+        });*/0000000
 
         //0000000000000000
         Admin_Frame1 = (FrameLayout) findViewById(R.id.admin_frame);
