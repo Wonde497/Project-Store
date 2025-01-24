@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_usb_uart"
+        android:icon="@drawable/ic_usb_black_24dp"
+        android:title="@string/title_COM_USB_UART" />
+
+    <item
+        android:id="@+id/navigation_com_base_rs232"
+        android:icon="@drawable/ic_dock_black_24dp"
+        android:title="@string/title_COM_BASE_RS232" />
+
+    <item
+        android:id="@+id/navigation_com_otg_usb2Serial"
+        android:icon="@drawable/ic_device_hub_black_24dp"
+        android:title="@string/title_COM_OTG_USB2Serial" />
+
+</menu>

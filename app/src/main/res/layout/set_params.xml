@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/set_params"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_set_params_title"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    tools:showIn="@layout/activity_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetAID"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_qpay"
+            android:text="Set AID"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSetRID"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_qpay"
+            android:text="Set RID"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSetKeys"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_qpay"
+            android:text="Set Keys"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClearAID"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_qpay"
+            android:text="Clear AID"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnClearRID"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_qpay"
+            android:text="Clear RID"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnClearKeys"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner_qpay"
+            android:text="Clear Keys"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fourth21"
+        android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/reg_support"
+                android:title="Register Support"/>
+            <item
+                android:id="@+id/status_support"
+                android:title="Change Support Status" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/dir_list"
+        android:title="Directory List"></item>
+    <item
+        android:id="@+id/sys_clock"
+        android:title="System Clock"></item>
+</menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bsc_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slash_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            app:cardCornerRadius="30dp"
+            app:cardBackgroundColor="@color/blackgreen2"
+            android:background ="@color/blackgreen2"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Update Merchant Name"
+            android:textSize="20dp"
+            android:fontFamily="@font/nudista_bold" />
+
+        <FrameLayout
+            android:id="@+id/updatebasescreen3_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/currentmname"
+                android:layout_width="392dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:text="Current M_Name"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:fontFamily="@font/panton_bold" />
+
+            <EditText
+
+                android:id="@+id/Tvupdatemerchantname"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="140dp"
+
+                android:drawableLeft="@drawable/white_merchant_icon_64px"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edittextback"
+                android:hint="Enter Merchant Name"
+                android:inputType="textNoSuggestions"
+                android:padding="15dp"
+                android:maxLength="100"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="17sp"
+                android:fontFamily="@font/panton_bold"
+                 />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/idBtnupdatemerchantname"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/yellowcorner_background"
+                android:text="Update"
+                android:textColor="@color/blackgreen2"
+                android:textSize="16sp"
+                android:fontFamily="@font/nudista_bold" />
+
+                <Button
+                    android:id="@+id/idBtncancel"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/yellowcorner_background"
+                    android:text="Skip"
+                    android:textColor="@color/blackgreen2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nudista_bold" />
+            </RelativeLayout>
+
+        </FrameLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>

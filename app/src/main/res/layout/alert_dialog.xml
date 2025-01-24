@@ -1,0 +1,66 @@
+<!-- custom_dialog_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+
+    android:layout_gravity="center"
+    android:layout_height="200dp"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Alert sign image -->
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoutquestion"
+        />
+
+    <!-- Message TextView -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/blackgreen2"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/panton_bold"
+        android:text="Are you sure do you want to Logout?"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="0dp"
+            android:background="@drawable/corner_background"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nudista_bold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:text="NO"/>
+
+        <Button
+            android:id="@+id/positiveButton"
+            android:layout_width="0dp"
+            android:background="@drawable/corner_background"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/nudista_bold"
+            android:textColor="@color/white"
+            android:text="YES"/>
+
+    </LinearLayout>
+</LinearLayout>

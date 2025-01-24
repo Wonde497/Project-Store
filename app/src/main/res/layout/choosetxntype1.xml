@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="550dp"
+
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:gravity="center_horizontal"
+        android:padding="27dp"
+        android:background="@color/blackgreen2"
+        android:text="Choose Transaction Type"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/nudista_bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lincashad"
+                    android:layout_width="120dp"
+                    android:background="@drawable/corner_background"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linvoid"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/imagecashad"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/white_cash_icon" />
+
+
+                    <TextView
+                        android:id="@+id/textcashadv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Cash Advance"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nudista_bold"
+
+                      />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linvoid"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lincashad"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/imagereversal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/white_reversal_icon_64px" />
+
+                    <TextView
+                        android:id="@+id/textreversal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Reversal"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nudista_bold"/>
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linbalance"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linPhone"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imagebalance"
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp"
+                        android:src="@drawable/white_balance_icon2" />
+
+
+                    <TextView
+                        android:id="@+id/textbalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Balance INQ."
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nudista_bold" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linPhone"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/corner_background"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linbalance"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp"
+                        android:src="@drawable/white_phone_auth_icon_64px" />
+
+                    <TextView
+                        android:id="@+id/textpreauthcom2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="  Phone Auth"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nudista_bold" />
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textdeposit111"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/globalyellow"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/lindeposit"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:layout_height="100dp"
+                    android:background="@drawable/corner_background"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textdeposit111"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/imagedeposit"
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="70dp"
+                        android:src="@drawable/white_deposite_icon" />
+
+                    <TextView
+                        android:id="@+id/textdeposit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Deposit"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/nudista_bold" />
+
+                </LinearLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
+
+<!--
+     <LinearLayout
+                    android:id="@+id/linbalance"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linrefund"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/imagebalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/balance" />
+
+
+                    <TextView
+                        android:id="@+id/textbalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Balance INQ."
+                        android:textAlignment="center"
+                        android:textColor="@color/dashencolour"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+ -->

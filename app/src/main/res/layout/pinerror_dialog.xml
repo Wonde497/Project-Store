@@ -1,0 +1,56 @@
+<!-- custom_dialog_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_gravity="center"
+    android:layout_height="250dp"
+    android:background="@drawable/bg_round_white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Alert sign image -->
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:src="@drawable/errorpinicon64px2"
+        />
+
+    <!-- Message TextView -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/blackgreen2"
+        android:layout_marginTop="16dp"
+        android:textStyle="italic|bold"
+        android:text="PIN value cannot be empty!"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/pinpositiveButton"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/corner_background"
+            android:text="OK"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/globalyellow" />
+
+    </LinearLayout>
+</LinearLayout>

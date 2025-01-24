@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:background="@drawable/corner_background"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="432dp"
+            android:background="@color/blackgreen2"
+            app:cardBackgroundColor="@color/blackgreen2"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/idtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/nudista_bold"
+                    android:text="Change User PIN"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <EditText
+
+                    android:id="@+id/idusername"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/edittextback"
+                    android:drawableLeft="@drawable/white_user_icon_24px"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/panton_bold"
+                    android:hint="Enter User Name"
+                    android:inputType="textNoSuggestions"
+                    android:minHeight="48dp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+
+                    android:id="@+id/idcurrentpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittextback"
+                    android:drawableLeft="@drawable/white_password_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/panton_bold"
+                    android:hint="Enter Current Password"
+                    android:inputType="numberPassword"
+                    android:maxLength="20"
+                    android:minHeight="48dp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="17sp" />
+
+                <EditText
+
+                    android:id="@+id/idnewpwd"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittextback"
+
+                    android:drawableLeft="@drawable/new_password_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/panton_bold"
+                    android:hint="Enter New Password"
+                    android:inputType="numberPassword"
+                    android:maxLength="20"
+                    android:minHeight="48dp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/idBtnchangeuser"
+                    android:layout_width="120dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/yellowcorner_background"
+                    android:fontFamily="@font/nudista_bold"
+                    android:text="Change"
+                    android:textColor="@color/blackgreen2"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/idnewpwd"
+                    app:layout_constraintVertical_bias="0.359" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

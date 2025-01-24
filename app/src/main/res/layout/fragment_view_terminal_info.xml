@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slash_background"
+    tools:context="com.verifone.demo.emv.userfunctions.view_users">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:id="@+id/invoices_layoutt"
+        tools:context=".MainActivity">
+        <FrameLayout
+            android:id="@+id/viewterminalinfo_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TERMINAL INFORMATION"
+                android:textAlignment="center"
+                android:textColor="@color/blackgreen2"
+                android:textSize="20dp"
+                android:fontFamily="@font/nudista_bold" />
+
+            <TextView
+                android:id="@+id/tvtid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="TERMINAL ID:           "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvmid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:text="MERCHANT ID:          "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/panton_bold"/>
+            <TextView
+                android:id="@+id/tvmname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="110dp"
+                android:text="MERCHANT NAME:     "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvmaddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="140dp"
+                android:text="MERCHANT ADDRESS:  "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvtmode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="170dp"
+                android:text="TERMINAL MODE:         "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvcurrency"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:text="CURRENCY TYPE:         "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvcomtype"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="230dp"
+                android:text="COMM TYPE:             "
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="260dp"
+                android:text="VERSION_No:"
+                android:textColor="@color/blackgreen2"
+                android:textSize="16dp"
+                android:fontFamily="@font/panton_bold"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

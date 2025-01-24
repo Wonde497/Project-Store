@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gbe_green_slash_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/setup_bar"
+        layout="@layout/setup_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/setup_bar"
+        android:layout_alignParentStart="true">
+        <!--android:background="#E0E0E0"-->
+
+
+        <TextView
+            android:id="@+id/txt_txntype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:fontFamily="@font/nudista_bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+             />
+
+        <TextView
+            android:id="@+id/inputapproval_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="85dp"
+            android:fontFamily="@font/panton_bold"
+            android:text="ENTER APPROVAL CODE"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/approval_value"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:background="@drawable/edittextgreenbackground1"
+            android:paddingRight="30dp"
+            android:text=""
+            android:inputType="textNoSuggestions"
+            android:maxLength="6"
+            android:hint=" Enter Approval Code"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/panton_bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnapprove"
+        android:layout_width="120dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/white_corner_backround"
+        android:fontFamily="@font/nudista_bold"
+        android:text="ENTER"
+        android:textColor="@color/blackgreen2"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/idBtncancel"
+        android:layout_width="120dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="345dp"
+
+        android:background="@drawable/white_corner_backround"
+        android:text="Cancel"
+        android:textColor="@color/blackgreen2"
+        android:textSize="16sp"
+        android:fontFamily="@font/nudista_bold"
+         />
+
+</RelativeLayout>

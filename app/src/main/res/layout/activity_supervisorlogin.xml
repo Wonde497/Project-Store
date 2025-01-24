@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/slash_background"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--android:background="#E0E0E0"-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="25dp"
+                app:cardBackgroundColor="@color/blackgreen2"
+                android:background ="@color/blackgreen2"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+            <TextView
+                android:id="@+id/superlogin"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="15dp"
+                android:text="Supervisor Login "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:fontFamily="@font/nudista_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+
+            <EditText
+                android:id="@+id/super_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edittextback"
+                android:drawableLeft="@drawable/white_user_icon_24px"
+                android:drawablePadding="20dp"
+                android:hint="Enter Supervisor Name"
+                android:inputType="textNoSuggestions"
+                android:fontFamily="@font/panton_bold"
+                android:minHeight="48dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#F9F5F5"
+                android:textColorHint="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13" />
+
+            <EditText
+                android:id="@+id/super_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittextback"
+                android:drawableLeft="@drawable/white_lock_icon_24px"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/panton_bold"
+                android:hint="Enter Supervisor Password"
+                android:inputType="numberPassword"
+
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#F9F5F5"
+                android:textColorHint="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/Enter"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/yellowcorner_background"
+                android:gravity="center"
+                android:text="Confirm"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:fontFamily="@font/nudista_bold"
+                android:textColor="@color/blackgreen2" />
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/green_nav_home_icon_24px"
+            android:title="Home"
+
+            app:itemTextColor="@color/blackgreen2"
+            android:iconTint="@color/blackgreen2"
+            android:itemBackground="@color/blackgreen2"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/white_setting_icon1_32px"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/nav_help"
+            android:title="Help"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            app:itemTextColor="@color/globalyellow"
+            android:iconTint="@color/globalyellow"
+            android:itemBackground="@color/blackgreen2"
+            android:title="About Us"/>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_rateus"
+            android:title="Rate Us"/>
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:iconTint="@color/blackgreen2"
+                android:icon="@drawable/nav_logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

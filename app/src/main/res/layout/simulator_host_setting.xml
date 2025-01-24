@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simulator_host_setting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toBottomOf="@id/tv_host_title"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:showIn="@layout/activity_settings">
+
+    <LinearLayout
+        android:id="@+id/default_host"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/sandybrown"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDefaultHost"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="The Default (CaseA)"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edIP"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="127.0.0.1"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/edPort"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5556" />
+
+            <Button
+                android:id="@+id/btnTransLogon"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logon" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/visa_a_host"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/powderblue"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/default_host">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvVisaHost"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="The Visa (CaseB)"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edIP1"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="127.0.0.1"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/edPort1"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5558" />
+
+            <Button
+                android:id="@+id/btnTransLogon1"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/visa_b_host"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/pink"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/visa_a_host">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHost3"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="The 2nd (128Bitmap)"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/edIP2"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="127.0.0.1"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/edPort2"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5560" />
+
+            <Button
+                android:id="@+id/btnTransLogon2"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ssl_host"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/darkseagreen"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/visa_a_host">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHost4"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="SSL"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edIP3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="10.172.24.90"
+                android:textAlignment="viewEnd" />
+
+            <EditText
+                android:id="@+id/edPort3"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="5502" />
+
+            <Button
+                android:id="@+id/btnTransLogon3"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

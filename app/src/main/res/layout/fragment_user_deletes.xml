@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/slash_background"
+    android:layout_height="wrap_content">
+
+
+    <!--edit text to enter course duration-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/blackgreen2"
+        android:background ="@color/blackgreen2"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tview"
+            android:layout_width="321dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nudista_bold"
+            android:text="Delete Support"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.053" />
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_marginTop="-25dp"
+
+            android:src="@drawable/newwarning"/>
+        <TextView
+            android:id="@+id/delete_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="-20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/panton_bold"
+            android:layout_gravity="center"
+            android:text="Warning: Deleting User"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/panton_bold"
+            android:text="This action cannot be undone. Are you sure you want to delete this user?"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <EditText
+
+        android:id="@+id/Tvregterminalid"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+            android:padding="15dp"
+        android:layout_margin="10dp"
+        android:hint="Please Enter Username"
+            android:drawableLeft="@drawable/white_user_icon_24px"
+        android:inputType="textNoSuggestions"
+        android:maxLength="20"
+            android:drawablePadding="10dp"
+        android:minHeight="48dp"
+            android:fontFamily="@font/panton_bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextback"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <Button
+        android:id="@+id/idBtnDisupp"
+        android:layout_width="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="53dp"
+        android:background="@drawable/redcornerbackground"
+        android:textColor="@color/white"
+        android:text="Delete"
+        android:fontFamily="@font/nudista_bold"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tvregterminalid"
+        app:layout_constraintVertical_bias="0.31" />
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

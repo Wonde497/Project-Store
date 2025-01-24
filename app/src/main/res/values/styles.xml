@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blackgreenprime</item>
+        <item name="colorPrimaryDark">@color/blackgreenprime</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/blackgreen2</item>
+        <item name="android:fontFamily">@font/nudista_bold</item>
+
+
+
+    </style>
+    <style name="SpinnerTextStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/darkyellow2</item>
+    </style>
+    <style name="AppTheme.NavigationView" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/blackgreen2</item>
+        <item name="android:fontFamily">@font/nudista_bold</item>
+        <item name="android:textSize">17dp</item><!-- Change text color -->
+        <item name="itemIconTint">@color/blackgreen2</item>
+        <item name="android:itemTextAppearance">@style/AppTheme.MenuItemText</item>
+        <item name="android:itemBackground">@drawable/corner_background</item>
+
+    </style>
+    <style name="CustomSpinnerTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/nudista_bold</item>
+        <!-- Add other text attributes as needed -->
+    </style>
+    <style name="AppTheme.MenuItemText" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textColor">@color/blackgreen2</item>
+    </style>
+
+
+        <!-- Define a custom text appearance -->
+        <style name="CustomNavigationViewTextAppearance" parent="TextAppearance.AppCompat.Body1">
+            <item name="fontFamily">@font/nudista_bold</item>
+            <item name="android:textColor">@color/blackgreen2</item> <!-- Optional: customize the text color -->
+        </style>
+    <style name="CustomNavigationViewItemStyle" parent="Widget.Design.NavigationView">
+        <item name="itemTextAppearance">@style/CustomNavigationViewTextAppearance</item>
+        <item name="itemIconTint">@color/blackgreen2</item>
+    </style>
+
+</resources>

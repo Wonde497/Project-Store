@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/blackgreen2"
+
+    tools:context="com.verifone.demo.emv.splash_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-41dp"
+        tools:layout_editor_absoluteY="174dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/new_gbe_logo">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/splashText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="257dp"
+                android:animateLayoutChanges="true"
+                android:fontFamily="@font/nudista_bold"
+                android:text=""
+                android:textColor="@color/globalyellowmain"
+                android:textSize="30dp"
+                android:transitionName="fadeTransition" />
+
+            <TextView
+                android:id="@+id/splashText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:animateLayoutChanges="true"
+                android:fontFamily="@font/nudista_bold"
+                android:text=""
+                android:textColor="@color/globalyellowmain"
+                android:textSize="30sp"
+
+                android:transitionName="fadeTransition" />
+
+            <TextView
+                android:id="@+id/splashText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:animateLayoutChanges="true"
+                android:fontFamily="@font/panton_bold"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:transitionName="fadeTransition" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

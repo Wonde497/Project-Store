@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bsc_drawer_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FAFBFC"
+            android:gravity="center"
+            android:text="REPRINT SPECIFIC RECEIPT"
+            android:textColor="#1F2EB7"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:titleTextColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="110dp"
+            android:textColor="#052984"
+            android:gravity="center"
+            android:text="ENTER SPECIFIC NUMBER"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <FrameLayout
+            android:id="@+id/specificreciept_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+
+                android:id="@+id/Tvreprint"
+                android:layout_width="392dp"
+                android:layout_height="76dp"
+                android:layout_gravity="clip_horizontal|center_horizontal"
+                android:layout_marginTop="200dp"
+                android:background="#30EFEEF2"
+                android:drawableLeft="@drawable/ic_baseline_perm_device_information_24"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:hint="Enter Transaction Number"
+                android:inputType="textNoSuggestions"
+                android:maxLength="8"
+                android:minHeight="48dp"
+                android:textColor="#304987"
+                android:textColorHint="#34518C"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.178"
+                tools:layout_editor_absoluteX="9dp" />
+
+            <Button
+                android:id="@+id/idBtnprint"
+                android:layout_width="120dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="350dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Print"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

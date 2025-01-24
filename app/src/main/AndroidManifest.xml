@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.verifone.simon.verifone_x9_demo_emv.Global">
+
+    <!--  x990 plus
+    <?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" android:versionCode="1000701" android:versionName="2.1.7.2" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.verifone.paydemo" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26"/>-->
+
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.premission.ACCESS_FRONT_CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"/>
+    <application
+
+        android:name="com.verifone.demo.emv.VFIApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/new_gbe_pos_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/new_gbe_pos_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.verifone.demo.emv.Applicationselectactiv"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.basic.choosetxntype1"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.keytransfer"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.Pre_Auth_Completion"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.MagInputPinActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.MagInputPanActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.InputCvvActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.InputSequenceNumber"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.HelpMain"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.AboutActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.HelpDetailedActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.AdminHelpMain"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.CashierHelpMain"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.SupervisorHelpMain"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Help.SupportHelpMain"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.ManualTest_Exdate"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.ReversalFristActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.Supervisorlogin"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.userfunctions.Change_user_pin"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <!--
+        <activity
+            android:name="com.verifone.demo.emv.Base_Screen"
+            android:exported="false" />
+        -->
+        <activity
+            android:name="com.verifone.demo.emv.transaction.ReversalActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.transaction.ManualTestActivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.userfunctions.user_view"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.loadingactivity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.under_construction"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.user_menu_activity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.user_login"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.test_activity_2"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.test_activity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.DeviceInfoActivity" />
+        <activity android:name="com.verifone.demo.emv.transaction.ESignActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.PreviewFontsActivity" />
+        <activity android:name="com.verifone.demo.emv.basic.BaseActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.transaction.InputPinActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.transaction.QRTransActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.transaction.CheckCardActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.Applicationselectactiv"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.SettingsActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.SET_AID_RID_KEY" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.LoginActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.splash_screen" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.verifone.demo.emv.Base_Screen" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.MenuActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.MainActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.SerialPortActivity"
+            android:label="@string/title_activity_serial_port" />
+        <activity
+            android:name="com.verifone.demo.emv.PrinterExActivity"
+            android:label="@string/title_activity_printer_ex"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.verifone.demo.emv.transaction.InputAmountActivity" android:screenOrientation="nosensor"/>
+        <activity android:name="com.verifone.demo.emv.CustomPinActivity" />
+
+        <receiver android:name="com.verifone.demo.emv.alarmbroadcastreciever" />
+
+        <activity
+            android:name="com.verifone.demo.emv.Supervisor_menu.Supervisor_manage_users"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Support_menu.Support_manage_user"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.terminalfunctions.txn_mange"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.terminalfunctions.Base_Screen4"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.terminalfunctions.Base_Screen3"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.terminalfunctions.Comm_Type"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.terminalfunctions.Terminal_Mode"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Manage_Transactions"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Base_Screen1"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.terminalfunctions.Currency"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Admin_menu.admin_menu1"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Cashier_menu_activity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Supervisor_menu_activity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Support_menu_settings"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Support_menu_activity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Admin_menu_activity"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <activity
+            android:name="com.verifone.demo.emv.Base_Screen2"
+            android:exported="false" android:screenOrientation="nosensor"/>
+        <receiver android:name="com.verifone.demo.emv.Autosettlement" />
+        <receiver android:name="com.verifone.demo.emv.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

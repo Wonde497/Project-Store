@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/slash_background"            android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    android:layout_height="match_parent">
+
+
+    <!--edit text to enter course duration-->
+
+    <EditText
+
+        android:id="@+id/Tvregterminalid"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextgreenbackground1"
+        android:layout_margin="10dp"
+        android:hint="Please Enter UserName"
+        android:inputType="textNoSuggestions"
+        android:textColorHint="@color/darkyellow"
+        android:minHeight="48dp"
+        android:textColor="@color/globalyellow"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <Button
+        android:id="@+id/idBtnDisupp"
+        android:layout_width="120dp"
+        android:layout_height="53dp"
+        android:text="Disable"
+        android:textSize="16sp"
+        android:textColor="@color/blackgreen2"
+        android:textStyle="bold"
+        android:background="@drawable/yellowcorner_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tvregterminalid"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <TextView
+        android:id="@+id/tview"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:text="Disable Support"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+</android.support.constraint.ConstraintLayout>

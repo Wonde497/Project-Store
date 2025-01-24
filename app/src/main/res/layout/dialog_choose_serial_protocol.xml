@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_protocol_type"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:hint="Manual Input"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        app:layout_constraintBottom_toBottomOf="@id/et_protocol_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_protocol_type"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="12dp"
+        android:text="Choose Protocol Type"
+        android:textColor="@color/grey_727272"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pre_defined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Predefined"
+        android:textColor="@color/grey_727272"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pre_defined">
+
+        <Button
+            android:id="@+id/bt_rs232"
+            android:text="rs232"
+            android:textAllCaps="false"
+            android:layout_gravity="fill"
+            />
+        <Button
+            android:id="@+id/btn_usb_rs232"
+            android:text="usb-rs232"
+            android:textAllCaps="false"
+            android:layout_gravity="fill"
+            />
+        <Button
+            android:id="@+id/btn_vf_rs232"
+            android:text="usb2rs232-VF-RS232"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/btn_v34modem"
+            android:text="usb2rs232-VF-V34Modem"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/c680dongle"
+            android:text="usb2rs232-VF-C680DongleModem"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btn_ztek"
+            android:text="usb2rs232-Z-TEK"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:textAllCaps="false"
+            />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

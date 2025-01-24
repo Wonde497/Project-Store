@@ -1,0 +1,31 @@
+<!-- diagonal_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom Layer: Purple Color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#800080" /> <!-- Purple color below the diagonal -->
+        </shape>
+    </item>
+    <!-- Top Layer: White Color -->
+    <item
+        android:top="4dp"
+    android:right="4dp"
+    android:bottom="4dp"
+    android:left="4dp"> ->
+    <shape android:shape="rectangle">
+        <solid android:color="#FFFFFF" /> <!-- White color above the diagonal -->
+    </shape>
+</item>
+    <!-- Diagonal Line -->
+<item>
+<rotate
+    android:fromDegrees="45"
+    android:toDegrees="45">
+    <shape android:shape="line">
+        <stroke
+            android:width="2dp"
+        android:color="#000000" /> <!-- Adjust the color of the diagonal line -->
+    </shape>
+</rotate>
+</item>
+    </layer-list>

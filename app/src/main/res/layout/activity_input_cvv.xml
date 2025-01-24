@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gbe_green_slash_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/setup_bar"
+        layout="@layout/setup_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/setup_bar"
+        android:layout_alignParentStart="true">
+        <!--android:background="#E0E0E0"-->
+
+
+        <TextView
+            android:id="@+id/txt_txntype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/nudista_bold" />
+
+        <TextView
+            android:id="@+id/inputpan_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="85dp"
+            android:text="ENTER CVV ON BACK OF CARD "
+            android:textColor="@color/white"
+            android:fontFamily="@font/panton_bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cvv_value"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|right"
+            android:background="@drawable/edittextgreenbackground1"
+            android:paddingRight="30dp"
+            android:text=""
+            android:fontFamily="@font/panton_bold"
+            android:hint=" Enter CVV Number"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/keyboard_input_amount"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/yellowcorner_background"
+        android:text="Skip"
+        android:textColor="@color/blackgreen2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dark green shape at the top -->
+    <item android:gravity="top">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/blackgreen2"
+                android:endColor="@color/blackgreen2"
+                android:angle="90" />
+        </shape>
+    </item>
+    <!-- Dark yellow triangle shape at the bottom left corner -->
+    <item
+        android:left="-500dp"
+        android:top="300dp"
+        android:right="70dp"
+        android:bottom="0dp">
+        <rotate
+            android:fromDegrees="45"
+            android:toDegrees="180">
+            <shape android:shape="oval">
+                <solid android:color="#ECAB22" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

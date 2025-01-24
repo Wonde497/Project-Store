@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/corner_background"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/corner_background"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|left"
+                android:background="@drawable/yellowcorner_background"
+                android:elevation="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="cancel"
+                android:textColor="@color/blackgreen2"
+                android:textColorHint="@color/confirm_button"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/change"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/yellowcorner_background"
+                android:elevation="10dp"
+                android:paddingLeft="4dp"
+                android:text="OK"
+                android:textColor="@color/blackgreen2"
+                android:textColorHint="@color/confirm_button"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Card is Not Working"
+                android:inputType="textPersonName"
+                android:paddingLeft="8dp"
+                android:text="@string/cardfailed"
+                android:textAlignment="center"
+                android:textColor="@color/globalyellow"
+                android:textColorHint="@color/dashencolour"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

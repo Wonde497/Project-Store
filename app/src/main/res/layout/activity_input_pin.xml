@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/slash_background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/trans_title"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/pin_input_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text=" Input your PIN "
+            android:fontFamily="@font/nudista_bold"
+            android:textColor="@color/blackgreen2"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_cardno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Card No. : "
+                android:fontFamily="@font/nudista_bold"
+                android:textColor="@color/blackgreen2"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_cardno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:textColor="@color/blackgreen2"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/inputpin_amttitle_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Amount: "
+                android:textStyle="bold"
+                android:fontFamily="@font/nudista_bold"
+                android:textColor="@color/blackgreen2"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" $ 0.00 "
+                android:fontFamily="@font/panton_bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blackgreen2"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_show_pin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Input password here"
+            android:inputType="numberPassword"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yellowcorner_background"
+            android:text="Confirm"
+            android:textColor="@color/globalyellow"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+<!---
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+
+        <Button
+            android:id="@+id/pininputButton"
+            android:background="@drawable/corner_background"
+            android:textColor="@color/white"
+            android:layout_height="60dp"
+            android:layout_width="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nudista_bold"
+            android:layout_weight="1"
+            android:text="Input PIN"/>
+
+        <Button
+            android:id="@+id/transactionCancel"
+            android:background="@drawable/corner_background"
+            android:layout_height="60dp"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+           android:fontFamily="@font/nudista_bold"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Cancel Transaction"/>
+
+    </LinearLayout>
+    -->
+</LinearLayout>

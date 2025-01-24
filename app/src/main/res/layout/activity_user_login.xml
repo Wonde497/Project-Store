@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slash_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+        <TextView
+
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/darkyellow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="@color/blackgreen2"
+            android:background ="@color/blackgreen2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/nudista_bold"
+                    android:textSize="27sp"
+                    android:layout_marginBottom="15dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/idaddusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/edittextgreenbackground1"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/white_user_icon_24px"
+                    android:drawablePadding="20dp"
+                    android:hint="Enter User Name"
+                    android:fontFamily="@font/panton_bold"
+                    android:inputType="textNoSuggestions"
+                    android:padding="17dp"
+                    android:textStyle="bold"
+                    android:textColorHighlight="#F9F5F5"
+                    android:textSize="18sp"
+                    />
+
+                <EditText
+                    android:id="@+id/idadduserpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/edittextgreenbackground1"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/white_lock_icon_24px"
+                    android:drawablePadding="20dp"
+                    android:hint="Enter Password"
+
+                    android:fontFamily="@font/panton_bold"
+                    android:inputType="numberPassword"
+                    android:textStyle="bold"
+                    android:padding="17dp"
+                    android:textSize="18sp"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/cbousertype"
+                    android:layout_width="242dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:autofillHints="Select User Type"
+                    android:background="@drawable/edittextgreenbackground1"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/back_home"
+                    android:padding="17dp"
+                    android:textAppearance= "@style/CustomSpinnerTextStyle"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/Spinner"/>
+                <Button
+                    android:id="@+id/idBtnlogin"
+                    android:layout_width="120dp"
+                    android:layout_height="53dp"
+                    android:text="Login"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nudista_bold"
+                    android:background="@drawable/yellowcorner_background"
+                    android:textSize="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/blackgreen2"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

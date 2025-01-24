@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.verifone.demo.emv.terminalfunctions.Terminal_Mode">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@color/cbe_color"
+            android:gravity="center"
+            android:text="Add Manage Transactions"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:titleTextColor="#FFF" />
+
+        <FrameLayout
+            android:id="@+id/comm_frame"
+            android:layout_width="472dp"
+            android:layout_height="match_parent"
+            android:background="#F4F3F7"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+            <!--
+                         Horizontal Row1.....................
+                    -->
+
+            <ImageButton
+                android:id="@+id/add_txn"
+                android:layout_width="213dp"
+                android:layout_height="225dp"
+                android:background="@color/white"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/manage1"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

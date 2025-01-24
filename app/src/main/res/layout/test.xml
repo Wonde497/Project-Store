@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--edit text to enter course duration-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseName"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter course Name"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        tools:layout_editor_absoluteX="-28dp" />
+
+
+    <!--edit text to display course tracks-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseDuration"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter Course Duration"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        tools:layout_editor_absoluteX="3dp" />
+
+
+    <!--edit text for course description-->
+
+    <EditText
+
+        android:id="@+id/idEdtCourseTracks"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter Course Tracks"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idEdtCourseDescription"
+        app:layout_constraintVertical_bias="0.155"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+
+        android:id="@+id/idEdtCourseDescription"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+
+        android:hint="Enter Course Description"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        tools:layout_editor_absoluteX="-12dp" />
+
+    <Button
+        android:id="@+id/idBtnAddCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661"
+        tools:layout_editor_absoluteX="139dp" />
+
+    <Button
+        android:id="@+id/idBtnReadCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read All Courses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784"
+        tools:layout_editor_absoluteX="139dp" />
+</android.support.constraint.ConstraintLayout>
